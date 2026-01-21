@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bangladesh Map</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Inter", Arial, sans-serif;
+            background-image: url("240_F_964647885_YXjiN4lZC3veXYPEUVXJlZ2KbvOeBqVQ.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #000000;
+        }
+
+        /* PAGE LAYOUT */
+        .section {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* TEXT AREA */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: #0a4b36;
+        }
+
+        .header p {
+            font-size: 18px;
+            max-width: 850px;
+            margin: 0 auto;
+            color: #333;
+        }
+
+        /* CARD / MAP BOX */
+        .map-card {
+            background: #ffffffd9;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+            margin-top: 35px;
+            backdrop-filter: blur(4px);
+        }
+
+        #map {
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        .info-text {
+            margin-top: 20px;
+            line-height: 1.7;
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* RESPONSIVE FIXES */
+        @media (max-width: 900px) {
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .header p {
+                font-size: 16px;
+            }
+
+            #map {
+                height: 380px;
+            }
+
+            .map-card {
+                padding: 18px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 23px;
+            }
+
+            .header p {
+                font-size: 15px;
+            }
+
+            #map {
+                height: 300px;
+            }
+
+            .map-card {
+                padding: 15px;
+            }
+
+            .info-text {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 🚫 Navigation bar EXACTLY as you wrote it (unchanged) -->
+    <nav class="nav-right">
+        <select id="language-switcher">
+            <option value="en" selected>English</option>
+            <option value="ja">日本語</option>
+        </select>
+
+        <a href="index2.html" class="nav-home" data-i18n="nav_home">Home</a>
+
+        <div class="menu-container">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                <span></span><span></span><span></span>
+            </label>
+            <ul class="menu">
+                <li><a href="food.html" data-i18n="nav_food">Food</a></li>
+                <li><a href="tourism.html" data-i18n="nav_tourism">Tourism</a></li>
+                <li><a href="map.html" data-i18n="nav_map">Map</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <div class="section">
+        <div class="header">
+            <h1 data-i18n="title">Bangladesh: A Land of Rivers and Culture</h1>
+            <p data-i18n="subtitle">
+                Located in South Asia, Bangladesh is known for its vibrant culture,
+                lush greenery, and the world’s largest delta. Explore its geographical
+                position on the interactive map below.
+            </p>
+        </div>
+
+        <div class="map-card">
+            <div id="map"></div>
+
+            <div class="info-text" data-i18n="description">
+                <strong>Bangladesh</strong> lies at the heart of the Bengal delta, bordered
+                by India on three sides and the Bay of Bengal to the south. Its capital,
+                Dhaka, is one of the fastest-growing megacities in the world. The country
+                is renowned for the Sundarbans mangrove forest, Cox’s Bazar—the longest
+                natural sea beach—and a rich heritage that blends art, music, language,
+                and tradition.
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- 🌐 LANGUAGE SWITCHER SCRIPT -->
+    <script>
+        const translations = {
+            en: {
+                nav_home: "Home",
+                nav_food: "Food",
+                nav_tourism: "Tourism",
+                nav_religious: "Religious places",
+                nav_map: "Map",
+
+                title: "Bangladesh: A Land of Rivers and Culture",
+                subtitle: "Located in South Asia, Bangladesh is known for its vibrant culture, lush greenery, and the world’s largest delta. Explore its geographical position on the interactive map below.",
+
+                description: "Bangladesh lies at the heart of the Bengal delta, bordered by India on three sides and the Bay of Bengal to the south. Its capital, Dhaka, is one of the fastest-growing megacities in the world. The country is renowned for the Sundarbans mangrove forest, Cox’s Bazar—the longest natural sea beach—and a rich heritage that blends art, music, language, and tradition."
+            },
+
+            ja: {
+                nav_home: "ホーム",
+                nav_food: "料理",
+                nav_tourism: "観光",
+                nav_religious: "宗教的な場所",
+                nav_map: "地図",
+
+                title: "バングラデシュ：川と文化の国",
+                subtitle: "南アジアに位置するバングラデシュは、豊かな文化、緑豊かな自然、そして世界最大のデルタで知られています。下のインタラクティブマップでその地理的位置を確認できます。",
+
+                description: "バングラデシュはベンガルデルタの中心に位置し、三方をインド、南をベンガル湾に囲まれています。首都ダッカは世界で最も成長しているメガシティの一つです。スンダルバンスのマングローブ林、世界最長の天然ビーチであるコックスバザール、そして芸術・音楽・言語・伝統が融合した豊かな文化遺産で有名です。"
+            }
+        };
+
+        const langSwitcher = document.getElementById("language-switcher");
+
+        function applyLanguage(lang) {
+            document.querySelectorAll("[data-i18n]").forEach(el => {
+                const key = el.getAttribute("data-i18n");
+                el.innerHTML = translations[lang][key];
+            });
+        }
+
+        langSwitcher.addEventListener("change", () => {
+            const chosen = langSwitcher.value;
+            localStorage.setItem("lang", chosen);
+            applyLanguage(chosen);
+        });
+
+        // Load saved language
+        const saved = localStorage.getItem("lang") || "en";
+        langSwitcher.value = saved;
+        applyLanguage(saved);
+    </script>
+
+    <!-- 🗺️ MAP SCRIPT -->
+    <script>
+        const map = L.map('map').setView([23.685, 90.3563], 7);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        L.marker([23.8103, 90.4125])
+            .addTo(map)
+            .bindPopup("<b>Dhaka</b><br>Capital of Bangladesh")
+            .openPopup();
+    </script>
+
+</body>
+
+</html>

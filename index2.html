@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="title">Welcome to Bangladesh</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav-right">
+    <select id="language-switcher">
+      <option value="en" selected>English</option>
+      <option value="ja">日本語</option>
+    </select>
+
+    <a href="index2.html" class="nav-home" data-i18n="nav_home">Home</a>
+
+    <div class="menu-container">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+      <ul class="menu">
+        <li><a href="food.html" data-i18n="nav_food">Food</a></li>
+        <li><a href="tourism.html" data-i18n="nav_tourism">Tourism</a></li>
+        <li><a href="map.html" data-i18n="nav_map">Map</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Parallax Sections -->
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 data-i18n="hero_title">Bangladesh: A Nation of Nature, Rivers and Resilience</h1>
+
+          <p class="lead" data-i18n="hero_lead">
+            Bangladesh is a South Asian country shaped by the Ganges–Brahmaputra–Meghna delta,
+            known for its vibrant culture, rich history, and rapidly developing economy.
+          </p>
+
+          <div class="hero-stats" role="list" aria-label="Quick Facts">
+            <div class="stat" role="listitem">
+              <div class="stat-label" data-i18n="capital">Capital</div>
+              <div class="stat-value" data-i18n="capital_value">Dhaka</div>
+            </div>
+
+            <div class="stat" role="listitem">
+              <div class="stat-label" data-i18n="language">Language</div>
+              <div class="stat-value" data-i18n="language_value">Bengali (Bangla)</div>
+            </div>
+
+            <div class="stat" role="listitem">
+              <div class="stat-label" data-i18n="currency">Currency</div>
+              <div class="stat-value" data-i18n="currency_value">Bangladeshi Taka (BDT)</div>
+            </div>
+
+            <div class="stat" role="listitem">
+              <div class="stat-label" data-i18n="geography">Geography</div>
+              <div class="stat-value" data-i18n="geography_value">Delta &amp; Coastline</div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tourist.html" data-i18n="cta_tourist">Explore Tourist Locations</a>
+            <a class="btn btn-ghost" href="food.html" data-i18n="cta_food">Discover Bangladeshi Food</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Highlights Panel">
+          <div class="panel-card">
+            <h2 class="panel-title" data-i18n="highlights_title">Key Highlights</h2>
+
+            <!-- NOTE: split into strong + span so your JS (textContent) doesn't remove <strong> -->
+            <ul class="panel-list">
+              <li>
+                <strong data-i18n="hl_1_strong">Natural beauty</strong>
+                <span data-i18n="hl_1_text"> from river landscapes to the Bay of Bengal.</span>
+              </li>
+              <li>
+                <strong data-i18n="hl_2_strong">Cultural depth</strong>
+                <span data-i18n="hl_2_text"> in language, literature, music, and crafts.</span>
+              </li>
+              <li>
+                <strong data-i18n="hl_3_strong">World heritage</strong>
+                <span data-i18n="hl_3_text"> sites, historic mosques, and archaeological landmarks.</span>
+              </li>
+              <li>
+                <strong data-i18n="hl_4_strong">Cuisine</strong>
+                <span data-i18n="hl_4_text"> centered on rice, fish, spices, and regional traditions.</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <article class="card">
+          <header class="card-header">
+            <h2 data-i18n="h1">About the Country</h2>
+            <p class="muted" data-i18n="h1_muted">
+              An overview of history, society, and modern identity.
+            </p>
+          </header>
+
+          <div class="card-body">
+            <p data-i18n="about_p1">
+              Bangladesh’s identity is closely connected to the Bengali language and cultural traditions.
+              Its modern history includes the Language Movement and independence in 1971, shaping a strong
+              national commitment to heritage and progress.
+            </p>
+            <p class="compact" data-i18n="about_p2">
+              Today, Bangladesh is recognized for its textiles and manufacturing sectors, an expanding
+              digital economy, and a young population contributing to innovation and growth.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <header class="card-header">
+            <h2 data-i18n="culture_title">Culture &amp; Traditions</h2>
+            <p class="muted" data-i18n="culture_muted">
+              Festivals, arts, hospitality, and everyday life.
+            </p>
+          </header>
+
+          <div class="card-body">
+            <p data-i18n="culture_p1">
+              Cultural life features festivals such as Pohela Boishakh (Bengali New Year), traditional music,
+              and crafts including weaving and pottery. Hospitality is a valued social norm, reflected in
+              family-centered gatherings and shared meals.
+            </p>
+            <p class="compact" data-i18n="culture_p2">
+              From urban Dhaka to rural river communities, traditions remain dynamic—preserved while evolving
+              with modern life.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-label="Site Sections Preview">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="explore_title">Explore This Website</h2>
+          <p class="muted" data-i18n="explore_muted">
+            The next pages focus on cuisine and destinations—start from the highlights below.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="feature">
+            <div class="feature-top">
+              <a href="food.html"><span class="badge" data-i18n="food_badge">Food</span></a>
+              <h3 data-i18n="food_title">Signature Cuisine</h3>
+            </div>
+            <p data-i18n="food_desc">
+              Learn about staple ingredients, regional styles, and popular dishes—balanced, flavorful,
+              and deeply connected to local geography.
+            </p>
+            <a class="feature-link" href="food.html" aria-label="Go to Food page" data-i18n="food_link">Go to Food →</a>
+          </article>
+
+          <article class="feature">
+            <div class="feature-top">
+              <a href="tourism.html"><span class="badge" data-i18n="tourism_badge">Tourism</span></a>
+              <h3 data-i18n="tourism_title">Landmarks &amp; Nature</h3>
+            </div>
+            <p data-i18n="tourism_desc">
+              Discover iconic places including coastal areas, historic sites, and cultural districts that
+              represent Bangladesh’s diversity.
+            </p>
+            <a class="feature-link" href="tourist.html" aria-label="Go to Tourist Locations page" data-i18n="tourism_link">Go to Tourist Locations →</a>
+          </article>
+
+          <article class="feature">
+            <div class="feature-top">
+              
+              <h3 data-i18n="qs_title">Recommended Path</h3>
+            </div>
+            <p data-i18n="qs_desc">
+              If you are new to Bangladesh, begin with Tourist Locations, then explore Food to understand
+              daily culture through cuisine.
+            </p>
+            <div class="mini-actions">
+              <a class="btn btn-small" href="tourist.html" data-i18n="qs_btn_tourist">Tourist</a>
+              <a class="btn btn-small btn-light" href="food.html" data-i18n="qs_btn_food">Food</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3 data-i18n="about_bangladesh"></h3>
+        <p data-i18n="about_text">
+          
+        </p>
+      </div>
+  
+      
+  
+      <div class="footer-section">
+        <h3 data-i18n="contact">Contact</h3>
+        <p >Email: <a href="mailto:alexmikey619@gmail.com">alexmikey619@gmail.com</a></p>
+        <p data-i18n="phone">Phone:<a href="#">090-2205-9968</a></p>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Bangladesh Information | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+
+</body>
+</html>

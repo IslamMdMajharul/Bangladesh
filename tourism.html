@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Bangladesh</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Fix food name visibility */
+    .food-name {
+      color: #000 !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <h1 data-i18n="title">25 Tourist Places</h1>
+    <p data-i18n="description">Explore the beauty of Bangladesh – click on any location to learn more!</p>
+  </header>
+
+  <nav class="nav-right"> 
+    <select id="language-switcher">
+      <option value="en" selected>English</option>
+      <option value="ja">日本語</option>
+    </select>
+
+    <a href="index2.html" class="nav-home" data-i18n="nav_home">Home</a>
+
+    <div class="menu-container">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+      <ul class="menu">
+        <li><a href="food.html" data-i18n="nav_food">Food</a></li>
+       <li><a href="tourism.html" data-i18n="nav_tourism">Tourism</a></li>
+       <li><a href="map.html" data-i18n="nav_map">Map</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- FOOD GRID -->
+  <main class="gallery">
+
+     <!-- 1 -->
+<figure class="food-item" data-description="Cox’s Bazar is the world's longest natural sea beach, famous for its scenic beauty.">
+  <img src="tourism/Cox’s Bazar Sea Beach.jpg" alt="Cox's Bazar Sea Beach">
+  <figcaption class="food-name">Cox’s Bazar Sea Beach</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Cox's+Bazar,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 2 -->
+<figure class="food-item" data-description="Saint Martin’s Island is a small coral island in the Bay of Bengal, known for its turquoise water.">
+  <img src="tourism/Saint Martin’s Island.webp" alt="Saint Martin's Island">
+  <figcaption class="food-name">Saint Martin’s Island</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Saint+Martin's+Island,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 3 -->
+<figure class="food-item" data-description="Sajek Valley is a hill station in Rangamati, famous for misty mountains and stunning landscapes.">
+  <img src="tourism/Sajek Valley.jpg" alt="Sajek Valley">
+  <figcaption class="food-name">Sajek Valley</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Sajek,+Rangamati,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 4 -->
+<figure class="food-item" data-description="Bandarban Hill District is known for its hills, waterfalls, and tribal culture.">
+  <img src="tourism/Bandarban Hill District.webp" alt="Bandarban Hill District">
+  <figcaption class="food-name">Bandarban Hill District</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/place/Bandarban,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 5 -->
+<figure class="food-item" data-description="Rangamati Lake offers boating and scenic views in the heart of the Chittagong Hill Tracts.">
+  <img src="tourism/Rangamati Lake.jpg" alt="Rangamati Lake">
+  <figcaption class="food-name">Rangamati Lake</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Kaptai+Lake,+Rangamati,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 6 -->
+<figure class="food-item" data-description="Nilgiri Hills offer panoramic views, hiking trails, and serene landscapes in Bandarban.">
+  <img src="tourism/Nilgiri Hills.jpg" alt="Nilgiri Hills">
+  <figcaption class="food-name">Nilgiri Hills</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Nilgiri,+Bandarban,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 7 -->
+<figure class="food-item" data-description="Nafakhum Waterfall is one of the largest waterfalls in Bangladesh, located in Bandarban.">
+  <img src="tourism/Nafakhum Waterfall.jpeg" alt="Nafakhum Waterfall">
+  <figcaption class="food-name">Nafakhum Waterfall</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Nafa-khum,+Remakri,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 8 -->
+<figure class="food-item" data-description="Boga Lake is a stunning high-altitude lake surrounded by mountains and forest in Bandarban.">
+  <img src="tourism/Boga Lake.jpg" alt="Boga Lake">
+  <figcaption class="food-name">Boga Lake</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Boga+Lake,+Bandarban,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 9 -->
+<figure class="food-item" data-description="Jaflong is famous for its stone collection industry and beautiful views of the Meghalaya hills.">
+  <img src="tourism/Jaflong.jpg" alt="Jaflong">
+  <figcaption class="food-name">Jaflong</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Jaflong,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 10 -->
+<figure class="food-item" data-description="Ratargul Swamp Forest is the only freshwater swamp forest in Bangladesh, known for boating tours.">
+  <img src="tourism/Ratargul Swamp Forest.jpg" alt="Ratargul Swamp Forest">
+  <figcaption class="food-name">Ratargul Swamp Forest</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Ratargul+Swamp+Forest,+Sylhet,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 11 -->
+<figure class="food-item" data-description="Tanguar Haor is a wetland in northeastern Bangladesh, home to migratory birds and rich biodiversity.">
+  <img src="tourism/Tanguar Haor.jpg.webp" alt="Tanguar Haor">
+  <figcaption class="food-name">Tanguar Haor</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Tanguar+Haor,+Sunamganj,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 12 -->
+<figure class="food-item" data-description="Madhabkunda Waterfall is the largest waterfall in Bangladesh, located in Moulvibazar.">
+  <img src="tourism/Madhabkunda Waterfall.jpg" alt="Madhabkunda Waterfall">
+  <figcaption class="food-name">Madhabkunda Waterfall</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Madhabkunda+Waterfall,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 13 -->
+<figure class="food-item" data-description="Kuakata Sea Beach is unique as you can watch both sunrise and sunset from the beach.">
+  <img src="tourism/Kuakata Sea Beach.jpg.webp" alt="Kuakata Sea Beach">
+  <figcaption class="food-name">Kuakata Sea Beach</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Kuakata+Beach,+Patuakhali,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 14 -->
+<figure class="food-item" data-description="Lalbagh Fort is a 17th-century Mughal fort in Dhaka, rich in history and architecture.">
+  <img src="tourism/Lalbagh Fort.jpg" alt="Lalbagh Fort">
+  <figcaption class="food-name">Lalbagh Fort</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/place/Lalbagh+Fort,+Dhaka,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 15 -->
+<figure class="food-item" data-description="Ahsan Manzil, the Pink Palace of Dhaka, was the official residence of the Nawab of Dhaka.">
+  <img src="tourism/Ahsan Manzil.jpg" alt="Ahsan Manzil">
+  <figcaption class="food-name">Ahsan Manzil</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Ahsan+Manzil,+Dhaka,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 16 -->
+<figure class="food-item" data-description="Mahasthangarh is the oldest archaeological site in Bangladesh, dating back to 3rd century BC.">
+  <img src="tourism/Mahasthangarh.jpg" alt="Mahasthangarh">
+  <figcaption class="food-name">Mahasthangarh</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Mahasthangarh,+Bogra,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 17 -->
+<figure class="food-item" data-description="Paharpur Buddhist Vihara is a UNESCO World Heritage Site with ruins of an ancient monastery.">
+  <img src="tourism/Paharpur Buddhist Vihara.jpg" alt="Paharpur Buddhist Vihara">
+  <figcaption class="food-name">Paharpur Buddhist Vihara</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Somapura+Mahavihara,+Naogaon,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 18 -->
+<figure class="food-item" data-description="Panam City in Sonargaon showcases historical streets, old buildings, and Mughal-era architecture.">
+  <img src="tourism/Panam City (Sonargaon).jpg" alt="Panam City">
+  <figcaption class="food-name">Panam City (Sonargaon)</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Panam+City,+Sonargaon,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 19 -->
+<figure class="food-item" data-description="Star Mosque in Dhaka is known for its star-shaped motifs and stunning Islamic architecture.">
+  <img src="tourism/Star Mosque.jpg" alt="Star Mosque">
+  <figcaption class="food-name">Star Mosque</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Star+Mosque,+Dhaka,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 20 -->
+<figure class="food-item" data-description="Shaheed Minar is a national monument in Dhaka, commemorating the martyrs of the Bengali Language Movement.">
+  <img src="tourism/Shaheed Minar.jpg" alt="Shaheed Minar">
+  <figcaption class="food-name">Shaheed Minar</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Shaheed+Minar,+Dhaka,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 21 -->
+<figure class="food-item" data-description="Jatiyo Sriti Shoudho is the National Martyrs’ Memorial, a symbol of Bangladesh’s Liberation War.">
+  <img src="tourism/Jatiyo Sriti Shoudho.jpg" alt="National Martyrs' Memorial">
+  <figcaption class="food-name">Jatiyo Sriti Shoudho</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Jatiyo+Smriti+Soudho,+Savar,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 22 -->
+<figure class="food-item" data-description="Ramna Park is a peaceful urban park in Dhaka, perfect for walking and relaxation.">
+  <img src="tourism/Ramna Park.jpg" alt="Ramna Park">
+  <figcaption class="food-name">Ramna Park</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Ramna+Park,+Dhaka,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 23 -->
+<figure class="food-item" data-description="Baldha Garden is a botanical garden in Dhaka, known for its beautiful flowering plants.">
+  <img src="tourism/Baldha Garden.jpg" alt="Baldha Garden">
+  <figcaption class="food-name">Baldha Garden</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Baldha+Garden,+Dhaka,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 24 -->
+<figure class="food-item" data-description="Bangabandhu Safari Park in Gazipur is home to a variety of animals and a fun family attraction.">
+  <img src="tourism/Bangabandhu Safari Park.webp" alt="Bangabandhu Safari Park">
+  <figcaption class="food-name">Bangabandhu Safari Park</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Bangabandhu+Safari+Park,+Gazipur,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+
+<!-- 25 -->
+<figure class="food-item" data-description="Fantasy Kingdom is an amusement park in Dhaka, offering rides, games, and entertainment for all ages.">
+  <img src="tourism/Fantasy Kingdom.webp" alt="Fantasy Kingdom">
+  <figcaption class="food-name">Fantasy Kingdom</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.google.com/maps/search/Fantasy+Kingdom,+Ashulia,+Bangladesh" target="_blank" data-i18n="MoreInfo">More Info</a></figcaption>
+</figure>
+</main>
+ <!-- Popup Modal -->
+ <div id="foodModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modalImage" src="" alt="">
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3 data-i18n="about_bangladesh"></h3>
+      <p data-i18n="about_text">
+        
+      </p>
+    </div>
+
+    
+
+    <div class="footer-section">
+      <h3 data-i18n="contact">Contact</h3>
+      <p >Email: <a href="mailto:alexmikey619@gmail.com">alexmikey619@gmail.com</a></p>
+      <p data-i18n="phone">Phone:<a href="#">090-2205-9968</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Bangladesh Information | All Rights Reserved</p>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+<script src="js/tourism.js"></script>
+
+</body>
+</html>

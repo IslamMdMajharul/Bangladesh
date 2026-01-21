@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Bangladesh</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Fix food name visibility */
+    .food-name {
+      color: #000 !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <h1 data-i18n="title">25 Bangladeshi Foods</h1>
+<p data-i18n="description">Explore the taste of Bangladesh – click on any dish to learn more!</p>
+  </header>
+
+  <nav class="nav-right"> 
+    <select id="language-switcher">
+      <option value="en" selected>English</option>
+      <option value="ja">日本語</option>
+      
+    </select>
+
+    <a href="index2.html" class="nav-home" data-i18n="nav_home">Home</a>
+
+    <div class="menu-container">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+      <ul class="menu">
+        <li><a href="food.html" data-i18n="nav_food">Food</a></li>
+        <li><a href="tourism.html" data-i18n="nav_tourism">Tourism</a></li>
+        <li><a href="map.html" data-i18n="nav_map">Map</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- FOOD GRID -->
+  <main class="gallery">
+
+    <!-- 1 -->
+<figure class="food-item" data-description="Hilsa fish cooked in pungent mustard curry with aromatic spices."  >
+  <img src="food/Shorshe Ilish (Hilsa in mustard curry).webp" alt="Shorshe Ilish">
+  <figcaption class="food-name" data-i18n="f1">Shorshe Ilish</figcaption>
+  <figcaption class="food-recipe"><a href="https://www.youtube.com/embed/1tlC9wqAoWM?autoplay=1&mute=1" target="_blank" data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 2 -->
+<figure class="food-item" data-description="Ilish Bhaja is fried Hilsa fish, lightly seasoned for a crispy, flavorful dish.">
+  <img src="food/Ilish Bhaja (Fried Hilsa).webp" alt="Ilish Bhaja">
+  <figcaption class="food-name"  data-i18n="f2">Ilish Bhaja</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 3 -->
+<figure class="food-item" data-description="Chingri Malai Curry features prawns cooked in rich coconut milk with aromatic spices.">
+  <img src="food/Chingri Malai Curry (Prawns in coconut gravy).webp" alt="Chingri Malai Curry">
+  <figcaption class="food-name" data-i18n="f3">Chingri Malai Curry</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 4 -->
+<figure class="food-item" data-description="Kacchi Biryani is aromatic mutton biryani layered with rice and spices.">
+  <img src="food/Kacchi Biryani (Mutton biryani).jpg" alt="Kacchi Biryani">
+  <figcaption class="food-name" data-i18n="f4">Kacchi Biryani</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 5 -->
+<figure class="food-item" data-description="Beef Kala Bhuna is a slow-cooked, dark, spicy beef curry with deep flavors.">
+  <img src="food/Beef Kala Bhuna (Slow-cooked beef curry).jpg" alt="Beef Kala Bhuna">
+  <figcaption class="food-name"  data-i18n="f5">Beef Kala Bhuna</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 6 -->
+<figure class="food-item" data-description="Beef Chui Jhal is a fiery beef dish made with the unique Chui Jhal spice.">
+  <img src="food/Beef Chui Jhal (Spicy beef with Chui Jhal spice).jpg" alt="Beef Chui Jhal">
+  <figcaption class="food-name"  data-i18n="f6">Beef Chui Jhal</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 7 -->
+<figure class="food-item" data-description="Chicken Rezala is a creamy, mildly spiced chicken curry cooked with yogurt.">
+  <img src="food/Chicken Rezala (Yogurt-based chicken curry).jpg" alt="Chicken Rezala">
+  <figcaption class="food-name"  data-i18n="f7">Chicken Rezala</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 8 -->
+<figure class="food-item" data-description="Chicken Roast (Bangladeshi-style) is a mildly sweet and spiced roast chicken.">
+  <img src="food/Chicken Roast (Bangladeshi-style).webp" alt="Chicken Roast">
+  <figcaption class="food-name"  data-i18n="f8">Chicken Roast</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 9 -->
+<figure class="food-item" data-description="Aloo Bharta is mashed potatoes mixed with mustard oil, onions, and chilies.">
+  <img src="food/Aloo Bharta (Mashed potato with mustard oil).jpg" alt="Aloo Bharta">
+  <figcaption class="food-name"  data-i18n="f9">Aloo Bharta</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 10 -->
+<figure class="food-item" data-description="Begun Bharta is smoky mashed eggplant mixed with spices, onions, and chilies.">
+  <img src="food/Begun Bharta (Mashed eggplant).jpg" alt="Begun Bharta">
+  <figcaption class="food-name"  data-i18n="f10">Begun Bharta</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 11 -->
+<figure class="food-item" data-description="Fuchka is a crispy puri filled with spicy tamarind water, potatoes, and chickpeas.">
+  <img src="food/Fuchka (Pani puri with tamarind water).webp" alt="Fuchka">
+  <figcaption class="food-name"  data-i18n="f11">Fuchka</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 12 -->
+<figure class="food-item" data-description="Chotpoti is a spicy chickpea mix topped with onions, chilies, and tamarind sauce.">
+  <img src="food/Chotpoti (Spicy chickpea mix).png" alt="Chotpoti">
+  <figcaption class="food-name"  data-i18n="f12">Chotpoti</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 13 -->
+<figure class="food-item" data-description="Singara is a savory pastry filled with spiced potato or vegetables.">
+  <img src="food/Singara (Savory pastry with potato filling).webp" alt="Singara">
+  <figcaption class="food-name"  data-i18n="f13">Singara</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 14 -->
+<figure class="food-item" data-description="Samucha is a triangular fried snack with a spicy vegetable or meat filling.">
+  <img src="food/Samucha (Triangular fried snack).jpg" alt="Samucha">
+  <figcaption class="food-name"  data-i18n="f14">Samucha</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 15 -->
+<figure class="food-item" data-description="Morog Polao is fragrant chicken pilaf cooked with spices and aromatic rice.">
+  <img src="food/Morog Polao (Chicken pilaf).jpg" alt="Morog Polao">
+  <figcaption class="food-name"  data-i18n="f15">Morog Polao</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 16 -->
+<figure class="food-item" data-description="Tehari is a spiced beef rice dish cooked with aromatic seasonings.">
+  <img src="food/Tehari (Beef rice dish).jpg" alt="Tehari">
+  <figcaption class="food-name"  data-i18n="f16">Tehari</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 17 -->
+<figure class="food-item" data-description="Lal Shak Bhaja is lightly stir-fried red amaranth leaves with garlic and spices.">
+  <img src="food/Lal Shak Bhaja (Stir-fried red amaranth).jpg" alt="Lal Shak Bhaja">
+  <figcaption class="food-name"  data-i18n="f17">Lal Shak Bhaja</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 18 -->
+<figure class="food-item" data-description="Shobji is a mixed vegetable curry cooked with mild spices and herbs.">
+  <img src="food/Shobji (Mixed vegetable curry).jpg" alt="Shobji">
+  <figcaption class="food-name"  data-i18n="f18">Shobji</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 19 -->
+<figure class="food-item" data-description="Lau Chingri is tender bottle gourd cooked with prawns in a lightly spiced gravy.">
+  <img src="food/Lau Chingri (Bottle gourd with shrimp).jpg" alt="Lau Chingri">
+  <figcaption class="food-name"  data-i18n="f19">Lau Chingri</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 20 -->
+<figure class="food-item" data-description="Kumro Bharta is mashed pumpkin cooked with spices and mustard oil.">
+  <img src="food/Kumro Bharta (Pumpkin mash).jpg" alt="Kumro Bharta">
+  <figcaption class="food-name"  data-i18n="f20">Kumro Bharta</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 21 -->
+<figure class="food-item" data-description="Panta Ilish is fermented rice served with fried Hilsa and mustard sauce.">
+  <img src="food/Panta Ilish (Fermented rice with fried Hilsa).webp" alt="Panta Ilish">
+  <figcaption class="food-name"  data-i18n="f21">Panta Ilish</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 22 -->
+<figure class="food-item" data-description="Polao is fragrant rice cooked with meat or vegetables and aromatic spices.">
+  <img src="food/Polao (Fragrant rice with meat or vegetables).webp" alt="Polao">
+  <figcaption class="food-name"  data-i18n="f22">Polao</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 23 -->
+<figure class="food-item" data-description="Bhuna Khichuri is spiced rice cooked with lentils and meat for a rich flavor.">
+  <img src="food/Bhuna Khichuri (Spiced rice with lentils and meat).jpg" alt="Bhuna Khichuri">
+  <figcaption class="food-name"  data-i18n="f23">Bhuna Khichuri</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 24 -->
+<figure class="food-item" data-description="Jhalmuri is a spicy puffed rice snack with mustard oil, peanuts, and chilies.">
+  <img src="food/Jhalmuri (Spicy puffed rice snack).jpg" alt="Jhalmuri">
+  <figcaption class="food-name"  data-i18n="f24">Jhalmuri</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+<!-- 25 -->
+<figure class="food-item" data-description="Daal Bharta is mashed lentils mixed with mustard oil, onions, and mild spices.">
+  <img src="food/Daal Bharta (Mashed lentils).JPG" alt="Daal Bharta">
+  <figcaption class="food-name"  data-i18n="f25">Daal Bharta</figcaption>
+  <figcaption class="food-recipe"><a href="#" target="_blank"  data-i18n="moreInfo">View Recipe</a></figcaption>
+</figure>
+
+</main>
+ <!-- Popup Modal -->
+ <div id="foodModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="modalImage" src="" alt="">
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+ <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3 data-i18n="about_bangladesh"></h3>
+      <p data-i18n="about_text">
+        
+      </p>
+    </div>
+
+    
+
+    <div class="footer-section">
+      <h3 data-i18n="contact">Contact</h3>
+      <p >Email: <a href="mailto:alexmikey619@gmail.com">alexmikey619@gmail.com</a></p>
+      <p data-i18n="phone">Phone:<a href="#">090-2205-9968</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Bangladesh Information | All Rights Reserved</p>
+  </div>
+</footer>
+<script src="js/food.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
